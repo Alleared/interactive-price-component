@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alleared">
+  <meta name="description" content="FrontendMentor JavaScript Junior challenge coded by Alleared">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Interactive pricing component | Frontend Mentor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1>Simple, traffic&dash;based pricing</h1>
+      <p>Sign&dash;up for our 30&dash;day trial. No credit card required.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <div class="price-per-container">
+        <div class="pageviews-div">
+          <p class="js-pageviews">100k Pageviews</p>
+        </div>
+
+        <div class="slider-div">
+          <label for="slider" class="label-slider">
+            <input type="range" name="slider" id="slider" class="slider-range" min="8" max="36" step="4" value="16" >
+          </label>
+        </div>
+
+        <div class="price-div">
+          <p class="js-price">&dollar;16.00</p>
+          <span class="js-per-month">&sol; month</span>
+        </div>
+        
+      </div>
+
+      <div class="billing-container">
+        <div>
+          <p>Monthly Billing</p>
+        </div>
+        <div>
+          <label for="switch-button" class="label-switch">
+            <input type="checkbox" name="switch-button" id="switch-button" onclick="priceTotal()">
+            <span class="slide-switch"></span>
+          </label>
+        </div>
+        <div class="billing-div">
+          <div>
+            <p>Yearly Billing</p>
+          </div>
+          <div class="discount-div">
+            <p>25&percnt; discount</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="start-trial-container">
+        <div>
+          <div class="start-trial-div">
+            <div>
+              <img src="images/icon-check.svg" alt="Check-icon">
+            </div>
+            <div>
+              <p>Unlimited websites</p>
+            </div>
+          </div>
+
+          <div class="start-trial-div">
+            <div>
+              <img src="images/icon-check.svg" alt="Check-icon">
+            </div>
+            <div>
+              <p>100&percnt; data ownership</p>
+            </div>
+          </div>
+
+          <div class="start-trial-div">
+            <div>
+              <img src="images/icon-check.svg" alt="Check-icon">
+            </div>
+            <div>
+              <p>Email reports</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="start-trial-button">Start my trial</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Alleared</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
